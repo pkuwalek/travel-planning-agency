@@ -1,7 +1,16 @@
 .navContainer {
-    .logo {
+    .logoContainer {
         text-align: center;
         margin: auto;
+        width: auto;
+        .logo {
+            height: 25%;
+            width: 25%;
+            @media screen and (max-width: 600px) {
+                height: 50%;
+                width: 50%;
+            }
+        }
     }
     .navbar {
         display: flex;

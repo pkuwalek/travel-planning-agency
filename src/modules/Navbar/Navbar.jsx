@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.scss';
+import logo from './../../logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -15,7 +16,9 @@ const Navbar = () => {
 
   return (
     <div className="navContainer">
-      <h1 className='logo'>travel planning</h1>
+      <div className='logoContainer'>
+        <img src={logo} className='logo'></img>
+      </div>
       <div className={ activeClass }>
         <a href='#home'>Home</a>
         <a href='#shop'>Shop</a>
