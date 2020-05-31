@@ -3,30 +3,41 @@ import './content.scss';
 import { Parallax, Background } from 'react-parallax';
 import backgroundMaps from './../../maps.jpg';
 import backgroundGlobe from './../../globe.jpg';
+import backgroundFlatlay from './../../flatlay.jpg';
+import ipadcamera from './../../ipadcam.jpg';
+import hatandglasses from './../../hatandglasses.jpg';
 
 const Content = () => {
 
   return (
     <div>
         <Parallax 
-            bgImage={backgroundGlobe}
-            bgImageAlt="Globe"
-            strength={500}
+            bgImage = {backgroundMaps}
+            bgImageAlt = 'Maps'
+            strength = {500}
         >
-            <div style={{ height: '500px' }}>
-                <div className='inside'>HTML inside the parallax</div>
+            <div className = 'parallaxImg'>
+                <div className = 'inside'>
+                    <img src = {hatandglasses} />
+                    <div className = 'text'>
+                        <p>Soufflé gummi bears icing topping liquorice apple pie. 
+                            Candy pie brownie. Muffin halvah sugar plum sesame snaps apple pie. 
+                            Jelly-o icing chocolate chocolate bar jujubes carrot cake. 
+                            Pie chocolate bar sweet cake jelly chocolate lollipop jelly-o. 
+                            Topping chupa chups caramels cupcake wafer cupcake jelly beans bonbon.
+                        </p>
+                    </div>
+                </div>
             </div>
         </Parallax>
         <h1>| | |</h1>
-        <Parallax bgImage={backgroundMaps} blur={{ min: -1, max: 3 }}>
-            <div style={{ height: 500 }}>
-                <div className='inside'>Dynamic Blur</div>
-            </div>
-        </Parallax>
-        <h1>| | |</h1>
-        <Parallax bgImage={backgroundGlobe} strength={-100}>
-            <div style={{ height: 500 }}>
-                <div className='inside'>Reverse direction</div>
+        <Parallax 
+            bgImage = {backgroundFlatlay}
+            bgImageAlt = 'Flatlay'
+            strength = {500}
+        >
+            <div className = 'parallaxImg'>
+                <div className = 'inside'>HTML inside the parallax</div>
             </div>
         </Parallax>
         <h1>| | |</h1>
