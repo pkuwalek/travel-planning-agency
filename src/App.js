@@ -3,7 +3,7 @@ import './App.scss';
 
 
 import Navbar from './modules/Navbar/Navbar';
-import Content from './modules/Content/Content';
+import Homepage from './modules/Homepage/Homepage';
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <header className="App-header">
           { <Navbar /> }
         </header>
-        { <Content /> }
+        { <Homepage /> }
       </div>
 
   );

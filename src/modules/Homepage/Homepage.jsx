@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import './content.scss';
+import './homepage.scss';
+import Button from '../Button/Button';
 import { Parallax, Background } from 'react-parallax';
 import backgroundMaps from './../../maps.jpg';
 import backgroundFlatlay from './../../flatlay.jpg';
-import ipadcamera from './../../ipadcam.jpg';
 import hatandglasses from './../../hatandglasses.jpg';
 import girl1 from './../../girl1.jpg';
 import girl2 from './../../girl2.jpg';
 
-const Content = () => {
+const Homepage = () => {
 
   return (
     <div>
@@ -52,7 +52,11 @@ const Content = () => {
             strength = {500}
         >
             <div className = 'parallax-img'>
-                <div className = 'inside'>HTML inside the parallax</div>
+                <div className = 'inside-txt'>
+                    <h1>Check our offer</h1>
+                    <h2>Your dream holidays made for measure.</h2>
+                    <Button content = "let's go!" />
+                </div>
             </div>
         </Parallax>
         <h1>| | |</h1>
@@ -60,4 +64,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default Homepage;
