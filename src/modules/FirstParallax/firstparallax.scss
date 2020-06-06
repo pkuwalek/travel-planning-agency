@@ -1,0 +1,56 @@
+@import './../../style.scss';
+
+.parallax-img{
+    background-color: rgba(216,208,207,0.7);
+    height: 150vh;
+    font-family: $fontBasic;
+    .inside {
+        width: 60%;
+        background: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);   
+        @media(max-width: 595px){
+            width: 85%;
+        }     
+        img {
+            width: 65%;
+            @media(max-width: 595px){
+                width: 100%;
+            }
+        }
+        .text {
+            width: 35%;
+            background-color: #D6CECD;
+            position: absolute;
+            padding: 30px;
+            top: 10%;
+            left: 55%;
+            z-index: 1;
+            @media (max-width: 595px) {
+                margin-top: 10%;
+                position: relative;
+                padding: 0;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+            p {
+                margin: 0;
+                font-size: 26px;
+                color: white;
+                padding-bottom: 1em;
+                @media (max-width: 1130px) {
+                    font-size: 18px;
+                }
+                @media (max-width: 836px) {
+                    font-size: 12px;
+                }
+                @media(max-width: 595px){
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

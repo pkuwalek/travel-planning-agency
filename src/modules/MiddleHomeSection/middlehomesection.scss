@@ -1,0 +1,45 @@
+@import './../../style.scss';
+
+.middle-section {
+    background-color: #D6CECD;
+    color: white;
+    min-height: 150vh;
+    padding-top: 15vh;
+    .middle-section-content {
+        width: 80%;
+        margin: 0 auto;
+        @media(max-width: 836px) {
+            width: 100%;
+        }
+        h1 {
+            font-weight: 400;
+            font-size: 35px;
+            margin-top: 0;
+            padding-top: 3%;
+            text-align: center;
+        }
+        .images {
+            padding-top: 15vh;
+            display: flex;
+            justify-content: space-around;
+            @media(max-width: 836px) {
+                flex-wrap: wrap;
+            }
+            img {
+                height: 500px;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            } 
+            figcaption {
+                font-weight: 400;
+                font-size: 26px;
+                font-style: italic;
+                padding-top: 8vh;
+                text-align: center;
+                padding-bottom: 8vh;
+            }
+        }
+    }
+}

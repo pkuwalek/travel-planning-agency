@@ -8,7 +8,6 @@ import Homepage from './modules/Homepage/Homepage';
 
 function App() {
   return (
-
       <div className="App">
         <header className="App-header">
           { <Navbar /> }
