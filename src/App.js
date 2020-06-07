@@ -1,10 +1,8 @@
 import React from 'react';
 import './App.scss';
 
-
 import Navbar from './modules/Navbar/Navbar';
 import Homepage from './modules/Homepage/Homepage';
-
 
 function App() {
   return (
