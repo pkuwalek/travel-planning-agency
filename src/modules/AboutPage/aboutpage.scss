@@ -1,0 +1,56 @@
+@import './../../style.scss';
+
+.main-container {
+    width: 90%;
+    margin: auto;
+    .h1-container {
+        border-top: 1px solid #D6CECD;
+        border-bottom: 1.5px solid #D6CECD;
+        h1 {
+            text-align: center;
+            font-family: $fontBasic;
+            font-size: 30px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: .075em;
+            line-height: 1.2em;
+            text-transform: capitalize;
+        }
+    }
+    .content-container {
+        display: flex;
+        justify-content: space-evenly;
+        img {
+            max-width: 70vh;
+        }
+        p {
+            font-family: $fontBasic;
+            font-size: 18px;
+            white-space: pre-wrap;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.05em;
+            line-height: 1.5em;
+            text-transform: none;
+            float: right;
+            max-width: 50vh;
+        }
+        .btn-reverse {
+            background-color: transparent;
+            outline: none;
+            color: black;
+            border: 2px solid black;
+            padding: 21px 34px;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            font-weight: 700;
+            transition: 0.1s background-color linear, 0.1s color linear;
+            &:hover {
+                background-color: black;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
