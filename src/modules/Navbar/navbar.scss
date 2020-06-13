@@ -6,7 +6,7 @@
         .logo {
             height: 25%;
             width: 25%;
-            @media screen and (max-width: 600px) {
+            @media (max-width: 600px) {
                 height: 50%;
                 width: 50%;
             }
@@ -17,6 +17,7 @@
         overflow: hidden;
         background-color: #fff;
         justify-content: center;
+        transition: all 1s linear;
         a {
             float: left;
             display: block;
@@ -32,32 +33,27 @@
         .icon {
             display: none;
         }
-        @media screen and (max-width: 600px) {
-            justify-content: space-between;
-            a:not(:first-child) {
-                display: none;
+        @media (max-width: 600px) {
+            justify-content: flex-start;
+            position: relative;
+            flex-direction: column;
+            height: 3em;
+            transition: height 0.2s linear;
+            a {
+                float: none;
+                text-align: left;
             }
             a.icon {
-                float: right;
-                display: block;
+                position: absolute;
+                display: block !important;
+                right: 0;
+                top: 0;
             }
         }
     }
     .responsive {
-        @media screen and (max-width: 600px) {
-            position: relative;
-            justify-content: flex-start;
-            flex-direction: column;
-            .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-                }
-            a {
-                float: none;
-                display: block !important;
-                text-align: left;
-            }
+        @media (max-width: 600px) {
+            height: 12em;
         }
     }
 }

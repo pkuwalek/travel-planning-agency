@@ -5,7 +5,13 @@ const ContactPage = () => {
     return (
         <div>
             <Navbar />
-            <h1>This will be contact page</h1>
+            <div>
+                <h1>Contact us</h1>
+                <p>name: first name, last name</p>
+                <p>email</p>
+                <p>subject</p>
+                <p>message</p>
+            </div>
         </div>
 
     )
