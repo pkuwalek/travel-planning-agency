@@ -47,23 +47,6 @@
                 padding-bottom: 13%;
                 border-bottom: 1px solid #D6CECD;
             }
-            .btn-reverse {
-                margin-top: 10%;
-                background-color: transparent;
-                outline: none;
-                color: black;
-                border: 2px solid black;
-                padding: 21px 34px;
-                text-transform: uppercase;
-                letter-spacing: .2em;
-                font-weight: 700;
-                transition: 0.1s background-color linear, 0.1s color linear;
-                &:hover {
-                    background-color: black;
-                    color: white;
-                    cursor: pointer;
-                }
-            }
         }
     }
 }

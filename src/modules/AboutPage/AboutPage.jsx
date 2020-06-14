@@ -1,6 +1,7 @@
 import React from 'react';
 import './aboutpage.scss';
 import Navbar from './../Navbar/Navbar';
+import ButtonReverse from './../ButtonReverse/ButtonReverse';
 import friends from './../../friends.jpg';
 
 const AboutPage = () => {
@@ -32,7 +33,7 @@ const AboutPage = () => {
                         </p>
                     </div>
                     <div>
-                        <button className = 'btn-reverse'>Come with us</button>
+                        <ButtonReverse content = 'Come with us' />
                     </div>
                 </div>
             </div>
