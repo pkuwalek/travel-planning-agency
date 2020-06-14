@@ -9,31 +9,36 @@ const ContactPage = () => {
         <div>
             <Navbar />
             <div className = 'contact-wrapper'>
-                <img src = { flatlaypassport } />
-                <form>
-                    <h1>Contact us</h1>
-                    <label>
-                        First Name
-                        <input type = 'text' />
-                    </label>
-                    <label>
-                        Last Name
-                        <input type = 'text' />
-                    </label>
-                    <label>
-                        Email
-                        <input type = 'email' />
-                    </label>
-                    <label>
-                        Subject
-                        <input type = 'text' />
-                    </label>
-                    <label>
-                        Message
-                        <textarea />
-                    </label>
-                    <ButtonReverse content = 'submit' />
-                </form>
+                <div className = 'img-wrapper'>
+                    <img src = { flatlaypassport } />
+                </div>
+                <div className = 'form-wrapper'>
+                    <form>
+                        <h1>Contact us</h1>
+                        <label>
+                            First Name
+                            <input type = 'text' required />
+                        </label>
+                        <label>
+                            Last Name
+                            <input type = 'text' required />
+                        </label>
+                        <label>
+                            Email
+                            <input type = 'email' required />
+                        </label>
+                        <label>
+                            Subject
+                            <input type = 'text' required />
+                        </label>
+                        <label>
+                            Message
+                            <textarea required />
+                        </label>
+                        <ButtonReverse content = 'submit' className = 'btn' />
+                    </form>
+                </div>
+
             </div>
         </div>
     )

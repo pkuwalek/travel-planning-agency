@@ -1,5 +1,57 @@
 .contact-wrapper {
-    img {
-        max-width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 2% auto;
+    border-top: 1px solid #D6CECD;
+    padding-top: 2%;
+    .img-wrapper {
+        max-width: 45%;    
+        img {
+            max-width: 100%;
+        }
     }
+    .form-wrapper {
+        width: 45%;
+        h1 {
+            text-align: center;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 34px;
+            letter-spacing: .075em;
+            line-height: 1.2em;
+            text-transform: capitalize;
+
+        }
+        label {
+            display: block;
+            margin-left: 2%;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            line-height: normal;
+        }
+        input, textarea {
+            width: 100%;
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 6px 0 4px;
+            border: 1px solid #ccc;
+            background: #fafafa;
+            color: #000;
+            font-size: 16px;
+            line-height: normal;
+            box-sizing: border-box;
+            border-radius: 2px;
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        button {
+            margin-left: 2%;
+        }
+    }
+
 }
