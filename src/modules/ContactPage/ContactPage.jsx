@@ -35,7 +35,7 @@ const ContactPage = () => {
                             Message
                             <textarea required />
                         </label>
-                        <ButtonReverse content = 'submit' className = 'btn' />
+                        <ButtonReverse content = 'Submit' type = 'submit' />
                     </form>
                 </div>
 

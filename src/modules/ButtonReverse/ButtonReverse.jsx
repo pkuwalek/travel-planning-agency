@@ -2,9 +2,9 @@ import React from 'react';
 import './buttonreverse.scss';
 
 const ButtonReverse = (props) => {
-    const { content, handleClick } = props;
+    const { content, handleClick, type } = props;
     return (
-        <button className = 'buttonreverse' onClick = { handleClick }>{ content }</button>
+        <button className = 'buttonreverse' type = {type} onClick = { handleClick }>{ content }</button>
     )
 }
 
