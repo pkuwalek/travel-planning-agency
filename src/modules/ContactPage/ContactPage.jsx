@@ -38,7 +38,6 @@ const ContactPage = () => {
                         <ButtonReverse content = 'Submit' type = 'submit' />
                     </form>
                 </div>
-
             </div>
         </div>
     )
