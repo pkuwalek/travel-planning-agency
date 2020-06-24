@@ -1,0 +1,32 @@
+.footer-wrapper {
+    
+    .content-wrapper {
+        display: flex;
+        margin: 2em;
+        padding-bottom: 2em;
+        border-top: 2px solid #D6CECD;
+        border-bottom: 1px solid #D6CECD;
+        color: #D6CECD;
+        .left-part {
+            max-width: 60%;
+            margin: auto;
+            h1 {
+                text-align: center;
+            }
+            img {
+                max-width: 40em;
+            }
+        }
+        .right-part {
+            max-width: 40%;
+            margin: auto;
+            h1 {
+                text-align: center;
+            }
+            img {
+                max-width: 10em;
+            }
+        }
+    }
+
+}

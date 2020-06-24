@@ -2,6 +2,7 @@ import React from 'react';
 import FirstParallax from './FirstParallax';
 import MiddleHomeSection from './MiddleHomeSection';
 import SecondParallax from './SecondParallax';
+import Footer from './../Footer/Footer';
 
 const Homepage = () => {
 
@@ -10,7 +11,7 @@ const Homepage = () => {
         <FirstParallax />
         <MiddleHomeSection />
         <SecondParallax />
-        <h1>| | |</h1>
+        <Footer />
     </div>
   );
 };
