@@ -12,11 +12,11 @@ const MiddleHomeSection = () => {
                 <h1>Get to know us!</h1>
                 <div className = 'images'>
                     <figure>
-                        <img src = {girl1} />
+                        <img data-aos="fade-right" data-aos-duration="2000" src = {girl1} />
                         <figcaption>Mia</figcaption>
                     </figure>
                     <figure>
-                        <img src = {girl2} />
+                        <img data-aos="fade-left" data-aos-duration="2000" src = {girl2} />
                         <figcaption>Elena</figcaption>
                     </figure>
                 </div>
