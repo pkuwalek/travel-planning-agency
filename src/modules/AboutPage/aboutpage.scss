@@ -1,5 +1,14 @@
 @import './../../style.scss';
 
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 .main-container {
     width: 90%;
     margin: auto;
@@ -26,6 +35,7 @@
         }
         img {
             max-width: 70vh;
+            animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
             @media(max-width: 927px) {
                 max-width: 50vh;
             }
