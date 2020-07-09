@@ -17,16 +17,27 @@ const Footer = () => {
             </div>
             <div className = 'right-part'>
                 <h1>Let's Connect</h1>
-                <img src = {donkey} />
-                <img src = {sign} />
-                <FontAwesomeIcon icon = { faTwitter }/>
-                <FontAwesomeIcon icon = { faFacebook }/>
-                <FontAwesomeIcon icon = { faInstagram }/>
-                <FontAwesomeIcon icon = { faYoutube }/>
+                <div className = 'imag-wrapper'>
+                    <img src = {donkey} />
+                    <img src = {sign} />
+                </div>
+                <div className = 'icon-wrapper'>
+                    <a href = 'http://www.twitter.com' className = 'icon' target="_blank">
+                        <FontAwesomeIcon icon = { faTwitter } size = '2x' />
+                    </a>
+                    <a href = 'http://www.facebook.com' className = 'icon' target="_blank">
+                        <FontAwesomeIcon icon = { faFacebook } size = '2x' />
+                    </a>
+                    <a href = 'http://www.instagram.com' className = 'icon' target="_blank">
+                        <FontAwesomeIcon icon = { faInstagram } size = '2x' />
+                    </a>
+                    <a href = 'http://www.youtube.com' className = 'icon' target="_blank">
+                        <FontAwesomeIcon icon = { faYoutube } size = '2x' />
+                    </a>
+                </div>
             </div>
-
         </div>
-        <div>Created by Paula Kuwalek 2020</div>
+        <div className = 'author'>Created by Paula Kuwalek 2020</div>
     </div>
   );
 };
