@@ -1,6 +1,5 @@
 import React from 'react';
 import './shoppage.scss';
-import Navbar from './../Navbar/Navbar';
 import ButtonReverse from './../ButtonReverse/ButtonReverse';
 import { Parallax } from 'react-parallax';
 import plane from './../../plane2.jpg';
@@ -10,7 +9,6 @@ import road from './../../road.jpg';
 const ShopPage = () => {
     return (
         <div>
-            <Navbar />
             <Parallax            
             bgImage = {road}
             bgImageAlt = 'Road'

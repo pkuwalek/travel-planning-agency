@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from './../Navbar/Navbar';
 import ButtonReverse from './../ButtonReverse/ButtonReverse';
 import './contactpage.scss';
 import flatlaypassport from './../../flatlaypassport.jpg';
@@ -7,7 +6,6 @@ import flatlaypassport from './../../flatlaypassport.jpg';
 const ContactPage = () => {
     return (
         <div>
-            <Navbar />
             <div className = 'contact-wrapper'>
                 <div className = 'img-wrapper'>
                     <img src = { flatlaypassport } />

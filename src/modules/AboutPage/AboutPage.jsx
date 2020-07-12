@@ -1,13 +1,11 @@
 import React from 'react';
 import './aboutpage.scss';
-import Navbar from './../Navbar/Navbar';
 import ButtonReverse from './../ButtonReverse/ButtonReverse';
 import friends from './../../friends.jpg';
 
 const AboutPage = () => {
     return (
         <div className = 'main-container'>
-            <Navbar />
             <div className = 'h1-container'>
                 <h1>Mia & Elena</h1>
             </div>
