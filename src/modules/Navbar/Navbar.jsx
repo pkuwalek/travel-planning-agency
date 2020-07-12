@@ -21,11 +21,11 @@ const Navbar = () => {
         <img src = { logo } className = 'logo'></img>
       </div>
       <div className={ activeClass }>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/offer'>Offer</NavLink>
-        <NavLink to='/about'>About</NavLink>
-        <NavLink to='/contact'>Contact</NavLink>
-        <a href = '#' className = 'icon' onClick = { burger }>
+        <NavLink to = '/'>Home</NavLink>
+        <NavLink to = '/offer'>Offer</NavLink>
+        <NavLink to = '/about'>About</NavLink>
+        <NavLink to = '/contact'>Contact</NavLink>
+        <a href = 'javascript:;' className = 'icon' onClick = { burger }>
           <FontAwesomeIcon icon = { faBars }/>
         </a>
       </div>
