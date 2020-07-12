@@ -3,6 +3,7 @@ import './App.scss';
 
 import Navbar from './modules/Navbar/Navbar';
 import Homepage from './modules/Homepage/Homepage';
+import Footer from './modules/Footer/Footer';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -17,6 +18,7 @@ function App() {
           { <Navbar /> }
         </header>
         { <Homepage /> }
+        { <Footer /> }
       </div>
 
   );

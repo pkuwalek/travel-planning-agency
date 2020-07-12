@@ -3,8 +3,8 @@
 .middle-section {
     background-color: #D6CECD;
     color: white;
-    min-height: 150vh;
-    padding-top: 15vh;
+    min-height: 80vh;
+    padding-top: 5vh;
     .middle-section-content {
         width: 80%;
         margin: 0 auto;
@@ -19,7 +19,7 @@
             text-align: center;
         }
         .images {
-            padding-top: 15vh;
+            padding-top: 5vh;
             display: flex;
             justify-content: space-around;
             @media(max-width: 836px) {

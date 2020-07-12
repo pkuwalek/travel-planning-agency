@@ -1,8 +1,8 @@
 @import './../../style.scss';
 
-.parallax-img{
+.parallax-imag{
     background-color: rgba(216,208,207,0.7);
-    height: 150vh;
+    height: 110vh;
     font-family: $fontBasic;
     .inside-txt {
         color: white;
@@ -37,6 +37,7 @@
     color: white;
     min-height: 150vh;
     padding-top: 1.5em;
+    padding-bottom: 1.5em;
     h1 {
         text-align: center;
         margin: .67em 0;
@@ -54,15 +55,19 @@
         letter-spacing: .05em;
         line-height: 1.4em;
         text-transform: none;
-        padding-top: 1em;
+        padding-top: 0.5em;
+    }
+    p {
+        padding: 1.5em;
+        text-align: center;
     }
 }
 .second-middle-section {
     background-color: white;
     color: black;
     min-height: 60vh;
+    text-align: center;
     h1 {
-        text-align: center;
         margin: .67em 0;
         font-weight: 400;
         font-style: normal;
@@ -71,7 +76,6 @@
         line-height: 1.2em;
     }
     h2 {
-        text-align: center;
         font-weight: 400;
         font-style: italic;
         font-size: 25px;
@@ -79,5 +83,11 @@
         line-height: 1.4em;
         text-transform: none;
         padding-top: .5em;
+    }
+    p {
+        padding: 1em;
+    }
+    button {
+        margin-top: 2em;
     }
 }

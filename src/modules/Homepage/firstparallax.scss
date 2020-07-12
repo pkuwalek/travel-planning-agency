@@ -45,7 +45,7 @@
             width: 35%;
             background-color: #D6CECD;
             position: absolute;
-            padding: 30px;
+            padding: 3%;
             top: 10%;
             left: 55%;
             z-index: 1;
@@ -70,6 +70,7 @@
                     font-size: 12px;
                 }
                 @media(max-width: 595px){
+                    padding: 3%;
                     font-size: 17px;
                 }
             }
