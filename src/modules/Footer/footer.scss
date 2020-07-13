@@ -1,12 +1,13 @@
+@import './../../style.scss';
+
 .footer-wrapper {
-    
     .content-wrapper {
         display: flex;
         margin: 2em;
         padding-bottom: 2em;
-        border-top: 2px solid #D6CECD;
-        border-bottom: 1px solid #D6CECD;
-        color: #D6CECD;
+        border-top: 2px solid $colorCappucino;
+        border-bottom: 1px solid $colorCappucino;
+        color: $colorCappucino;
         @media (max-width: 840px) {
             flex-direction: column;
         }
@@ -25,6 +26,7 @@
                 max-width: 95%;
                 margin-left: auto;
                 margin-right: auto;
+                cursor: pointer;
             }
         }
         .right-part {
@@ -42,6 +44,7 @@
                 justify-content: space-evenly;
                 img {
                     max-width: 10em;
+                    cursor: pointer;
                 }
             }
             h1 {
@@ -52,7 +55,7 @@
                 display: flex;
                 justify-content: center;
                 .icon {
-                    color: #D6CECD;
+                    color: $colorCappucino;
                     padding: 1em;
                 }
             }

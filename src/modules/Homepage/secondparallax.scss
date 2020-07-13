@@ -1,7 +1,7 @@
 @import './../../style.scss';
 
 .parallax-img{
-    background-color: rgba(216,208,207,0.7);
+    background-color: $colorBackground;
     height: 150vh;
     font-family: $fontBasic;
     .inside-txt {

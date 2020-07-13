@@ -7,14 +7,14 @@
     100% {
       opacity: 1;
     }
-  }
+}
 
 .main-container {
     width: 90%;
     margin: auto;
     .h1-container {
-        border-top: 1px solid #D6CECD;
-        border-bottom: 1.5px solid #D6CECD;
+        border-top: 1px solid $colorCappucino;
+        border-bottom: 1.5px solid $colorCappucino;
         h1 {
             text-align: center;
             font-family: $fontBasic;
@@ -55,7 +55,7 @@
                 float: right;
                 max-width: 50vh;
                 padding-bottom: 13%;
-                border-bottom: 1px solid #D6CECD;
+                border-bottom: 1px solid $colorCappucino;
             }
         }
     }

@@ -1,7 +1,7 @@
 @import './../../style.scss';
 
 .parallax-imag{
-    background-color: rgba(216,208,207,0.7);
+    background-color: $colorBackground;
     height: 110vh;
     font-family: $fontBasic;
     .inside-txt {
@@ -33,7 +33,7 @@
     }
 }
 .first-middle-section {
-    background-color: #D6CECD;
+    background-color: $colorCappucino;
     color: white;
     min-height: 150vh;
     padding-top: 1.5em;
