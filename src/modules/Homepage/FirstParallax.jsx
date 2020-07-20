@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './firstparallax.scss';
+import Modal from './../Modal/Modal';
 import Button from '../Button/Button';
 import { Parallax } from 'react-parallax';
 import backgroundMaps from './../../maps.jpg';
 import hatandglasses from './../../hatandglasses.jpg';
 
 const FirstParallax = () => {
+    const [show, setShow] = useState(false);
+    const openModal = () => setShow(true);
+    const closeModal = () => setShow(false);
 
     return (
       <div>
+      
           <Parallax 
               bgImage = {backgroundMaps}
               bgImageAlt = 'Maps'
@@ -24,11 +29,13 @@ const FirstParallax = () => {
                               Pie chocolate bar sweet cake jelly chocolate lollipop jelly-o. 
                               Topping chupa chups caramels cupcake wafer cupcake jelly beans bonbon.
                           </p>
-                          <Button content = 'Go there'></Button>
+                          <Button content = 'Go there' handleClick = {openModal}></Button>
+                          
                       </div>
                   </div>
               </div>
           </Parallax>
+          <Modal closeModal={closeModal} show={show} />
       </div>
     );
   };
