@@ -1,3 +1,5 @@
+@import './../../style.scss';
+
 .show {
     display: block;
 }
@@ -5,16 +7,46 @@
     display: none;
 }
 .modal {
-    width: 500px;
+    width: 40%;
     position: fixed;
     margin: 0px auto;
-    padding: 20px;
+    padding: 2%;
     background-color: #fff;
     border-radius: 2px;
-    transform: translateY(100%);
+    transform: translate(60%, 100%);
     transition: transform 0.2s ease;
     box-shadow: 0 2px 8px 3px;
     z-index: 2;
+    font-family: $fontBasic;
+    @media(max-width: 700px){
+        width: 85%;
+        transform: translate(5%, 100%);
+    }  
+    .closebtn {
+        background-color: transparent;
+        outline: none;
+        color: black;
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        font-weight: 700;
+        float: right;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    h1 {
+        text-align: center;
+        margin: .67em 0;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 35px;
+        letter-spacing: .075em;
+        line-height: 1.2em;
+    }
+    p {
+        text-align: center;
+    }
 }
 .overlay {
     position: fixed;
