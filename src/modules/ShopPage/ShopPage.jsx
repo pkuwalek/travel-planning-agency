@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './shoppage.scss';
 import ButtonReverse from './../ButtonReverse/ButtonReverse';
+import Modal from './../Modal/Modal';
 import { Parallax } from 'react-parallax';
 import plane from './../../plane2.jpg';
 import italy from './../../italy.jpg';
 import road from './../../road.jpg';
 
 const ShopPage = () => {
+    const [show, setShow] = useState(false);
+    const openModal = () => setShow(true);
+    const closeModal = () => setShow(false);
+
     return (
         <div>
             <Parallax            
@@ -96,7 +101,13 @@ const ShopPage = () => {
                     Candy pie brownie. Muffin halvah sugar plum sesame snaps apple pie. 
                     Jelly-o icing chocolate chocolate bar jujubes carrot cake.
                 </p>
-                <ButtonReverse content = 'get started' />
+                <ButtonReverse content = 'get started' handleClick = { openModal } />
+                <Modal
+                    h1 = 'Sorry!'
+                    p1 = "We're currenty overbooked. Leave your contact and we'll reach out to you shortly. "
+                    closeModal = { closeModal } 
+                    show = { show } 
+                />
             </div>
             <Parallax
             bgImage = {plane}

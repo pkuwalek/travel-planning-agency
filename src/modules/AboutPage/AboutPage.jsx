@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './aboutpage.scss';
 import ButtonReverse from './../ButtonReverse/ButtonReverse';
+import Modal from './../Modal/Modal';
 import friends from './../../friends.jpg';
 
 const AboutPage = () => {
+    const [show, setShow] = useState(false);
+    const openModal = () => setShow(true);
+    const closeModal = () => setShow(false);
+
     return (
         <div className = 'main-container'>
             <div className = 'h1-container'>
@@ -31,7 +36,13 @@ const AboutPage = () => {
                         </p>
                     </div>
                     <div>
-                        <ButtonReverse content = 'Come with us' />
+                        <ButtonReverse content = 'Come with us'  handleClick = { openModal } />
+                        <Modal 
+                            h1 = 'Do you know how much a polar bear weighs?'
+                            p1 = 'Enough to break the ice ;)'
+                            closeModal = { closeModal } 
+                            show = { show } 
+                        />
                     </div>
                 </div>
             </div>
